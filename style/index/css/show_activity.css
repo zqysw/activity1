@@ -35,7 +35,11 @@
 .class_border{
 	border: 1px solid grey;
 }
-.down_cla{
+.down_cla1{
+	padding-left: 55px;
+	padding-top: 15px;
+}
+.down_cla3{
 	padding-left: 55px;
 	padding-top: 15px;
 }

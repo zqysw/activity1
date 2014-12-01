@@ -27,24 +27,24 @@
 	</div>
 	<div class = "row class_border" id = "1">
 		<div class = "col-xs-8 pro_font">比赛</div>
-		<div class = "col-xs-4 down_cla "><span class = "glyphicon glyphicon-chevron-up"></span></div>
+		<div class = "col-xs-4 down_cla1 "><span class = "glyphicon glyphicon-chevron-up"></span></div>
 	</div>
 	<div class = "row content_border" id = "2">
 		<div class = "col-xs-12 content_font" >书法大赛：12月25号在杭州电子科技大学
 					学生活动中心开展书法大赛，参赛人员。。。</div>
-		<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
-		<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">我要报名</button></div>
-		<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">到这里去</button></div>
+		<div class = "col-xs-4 hide_content1"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
+		<div class = "col-xs-4 hide_content1"><button type = "button" class = "btn btn-primary btn-sm">我要报名</button></div>
+		<div class = "col-xs-4 hide_content1"><button type = "button" class = "btn btn-primary btn-sm">到这里去</button></div>
 	</div>
 	<div class = "row class_border" id = "3">
 		<div class = "col-xs-8 pro_font">科技</div>
-		<div class = "col-xs-4 down_cla "><span class = "glyphicon glyphicon-chevron-up"></span></div>
+		<div class = "col-xs-4 down_cla3 "><span class = "glyphicon glyphicon-chevron-up"></span></div>
 	</div>
 	<div class = "row content_border" id = "4">
 		<div class = "col-xs-12 content_font" >前端专场：12月10号在阿里巴巴总部举办前端专场活动，请报名人员。。。</div>
-		<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
-		<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">我要报名</button></div>
-		<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">到这里去</button></div>
+		<div class = "col-xs-4 hide_content2"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
+		<div class = "col-xs-4 hide_content2"><button type = "button" class = "btn btn-primary btn-sm">我要报名</button></div>
+		<div class = "col-xs-4 hide_content2"><button type = "button" class = "btn btn-primary btn-sm">到这里去</button></div>
 	</div>
 
 
