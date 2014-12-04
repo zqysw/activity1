@@ -35,14 +35,11 @@
 .class_border{
 	border: 1px solid grey;
 }
-.down_cla1{
+.down_cla{
 	padding-left: 55px;
 	padding-top: 15px;
 }
-.down_cla3{
-	padding-left: 55px;
-	padding-top: 15px;
-}
+
 .content_border{
 	border: 1px solid grey;
 	height:80px;
@@ -51,4 +48,13 @@
 	padding-top: 10px;
 	padding-bottom: 5px;
 	display: none;
+}
+.protype{
+	border: 1px solid grey;
+	height:50px;
+}
+.bottom{
+	width: 100%;
+	margin-top: 133px;
+	
 }
