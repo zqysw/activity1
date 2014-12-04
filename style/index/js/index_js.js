@@ -28,19 +28,22 @@ $(document).ready(function(){
 	var flag = 0;
 	class_border.click(function(){
 		if(flag == 0){
-			for(i = 0;i<content_border.size();i++)
-			content_border.eq(i).slideDown("fast");
-			$(this).children().eq(1).removeClass("glyphicon glyphicon-chevron-down");
-   			$(this).children().eq(1).addClass("glyphicon glyphicon-chevron-up");	
+
+			//
+			//for(i = 0;i<content_border.size();i++){$('.class_border > .content_border')   $(this 'content_border')
+			$(this).children('.content_border').slideDown("fast");
+			down_cla1.children().removeClass("glyphicon glyphicon-chevron-down");
+   			down_cla1.children().addClass("glyphicon glyphicon-chevron-up");
 			flag = 1;
 		}else{
-			for(i = 0;i<content_border.size();i++)
-			content_border.eq(i).slideUp("fast");
-		    $(this).children().eq(1).removeClass("glyphicon glyphicon-chevron-up");
-   			$(this).children().eq(1).addClass("glyphicon glyphicon-chevron-down");
+			//for(i = 0;i<content_border.size();i++){
+			$(this).children('.content_border').slideUp("fast");
+		    down_cla1.children().removeClass("glyphicon glyphicon-chevron-up");
+   			down_cla1.children().addClass("glyphicon glyphicon-chevron-down");
 			flag = 0;
 		}
 	});
+/*$("div[href^= "#"])
 
 
 
@@ -64,7 +67,6 @@ $(document).ready(function(){
 
 
 
-/*
 	//*点击第一个活动,动态显示“具体介绍”，“我要报名”，“到这里去”这3个按钮
 	function show_button2(){
 		second.css("height","120px");
@@ -86,69 +88,14 @@ $(document).ready(function(){
 	forth.mouseout(function(){
 		hide_button2();
 	});
- //*结束
-*/
-
-  	//点击“比赛”，比赛下的内容浮动
-   /*	function content_down1(){
-   		second.slideDown("fast");
-   		down_cla1.children().removeClass("glyphicon glyphicon-chevron-down");
-   		down_cla1.children().addClass("glyphicon glyphicon-chevron-up");
-   }
-
-   function content_up1(){
-   		second.slideUp("fast");
-   		down_cla1.children().removeClass("glyphicon glyphicon-chevron-up");
-   		down_cla1.children().addClass("glyphicon glyphicon-chevron-down");
-    }
-
- 	var flag = 0;
- 	first.click(function(){
- 		{
- 			if(flag ==0){
- 				content_down1();
-   				flag =1;
- 		
- 			} else {
- 				content_up1();
- 				flag =0;
-
- 			}
- 		}
-
-	//结束*/
+ //*结束*/
 
 
  
 
- 	/*//点击“科技”，科技下的内容浮动
-   	function content_down3(){
-   		forth.slideDown("fast");
-   		down_cla3.children().removeClass("glyphicon glyphicon-chevron-down");
-   		down_cla3.children().addClass("glyphicon glyphicon-chevron-up");
-   }
 
-   function content_up3(){
-   		forth.slideUp("fast");
-   		down_cla3.children().removeClass("glyphicon glyphicon-chevron-up");
-   		down_cla3.children().addClass("glyphicon glyphicon-chevron-down");
-    }
+ 
 
- 	var flag = 0;
- 	third.click(function(){
- 		{
- 			if(flag ==0){
- 				content_down3();
-   				flag =1;
- 		
- 			} else {
- 				content_up3();
- 				flag =0;
-
- 			}
- 		}
-
-	//结束*/
 
 
 
