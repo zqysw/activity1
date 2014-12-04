@@ -11,7 +11,6 @@
 	<link href = "/activity/style/index/css/show_activity.css" type = "text/css" rel = "stylesheet"></link>
 	<script	src = "/activity/style/bootstrap/js/jquery-1.11.1.min.js"></script>
 	<script	src = "/activity/style/bootstrap/js/bootstrap.min.js"></script>
-
 	<script	src = "/activity/style/index/js/index_js.js"></script>
 </head>
 <body>

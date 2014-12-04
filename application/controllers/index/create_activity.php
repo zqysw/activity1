@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Create_activity extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -17,11 +17,12 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	 function __construct()
+ 		{
+  			parent::__construct();
+ 		}
 	public function index()
 	{
-		$this->load->view('show_activity');
+		$this->load->view('create_activity');
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
