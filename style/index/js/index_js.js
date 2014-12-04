@@ -29,9 +29,7 @@ $(document).ready(function(){
 	class_border.click(function(){
 		if(flag == 0){
 			for(i = 0;i<content_border.size();i++)
-			content_border.eq(i).slideDown("fast");
-			$(this).children().eq(1).removeClass("glyphicon glyphicon-chevron-down");
-   			$(this).children().eq(1).addClass("glyphicon glyphicon-chevron-up");	
+			content_border.eq(i).slideDown("fast");	
 			flag = 1;
 		}else{
 			for(i = 0;i<content_border.size();i++)
