@@ -25,6 +25,7 @@ $(document).ready(function(){
 			$(this).parent().children('.content_border').slideUp("fast");
 			$(this).children('.down_cla').removeClass("glyphicon glyphicon-chevron-up");
    			$(this).children('.down_cla').addClass("glyphicon glyphicon-chevron-down");
+
 			flag = 1;
 		}else{
 			$(this).parent().children('.content_border').slideDown("fast");
