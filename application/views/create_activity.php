@@ -13,9 +13,7 @@
 	<script	src = "/activity/style/create/js/create_activity.js"></script>
 </head>
 <body>
-	<div class="container">
-<<<<<<< HEAD
-
+	<div class = "container">
 		<form class="form-horizontal" role="form">
 	  		<div class="form-group">		
 				<div id = "top">
@@ -244,14 +242,10 @@
 		</form>
 		<div class = "row bottom">
 			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/index" class = "btn btn-primary btn-sm " role = "button">活动推荐</a></div>
-			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm disabled" role = "button">活动发布</a></div>
-			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm" role = "button">活动搜索</a></div>
+			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/create_activity/index" class = "btn btn-primary btn-sm disabled" role = "button">活动发布</a></div>
+			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/search_activity/index" class = "btn btn-primary btn-sm" role = "button">活动搜索</a></div>
 			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm" role = "button">我的世界</a></div>
 		</div>
 	</div>
-=======
-		<div class = "row" id = "top">
-				<div class = "col-xs-12" id = "top_font">活动发布</div>
->>>>>>> c8762c00de659b01e34ae5ff07b5019fb76dbad1
 </body>
 </html>
