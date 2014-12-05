@@ -1,1 +1,11 @@
- 
+#top{
+	height: 50px;
+	border: solid 1px grey;
+	background: #98FB98;
+}
+#top_font{
+	text-align: center;
+	font-size: 16px;
+	font-style:bold;
+	margin-top: 9px;
+} 
