@@ -65,7 +65,7 @@
 		</div>
 		<div class = "row bottom">
 			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm disabled" role = "button">活动推荐</a></div>
-			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm" role = "button">活动发布</a></div>
+			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/create_activity/index" class = "btn btn-primary btn-sm" role = "button">活动发布</a></div>
 			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm" role = "button">活动搜索</a></div>
 			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm" role = "button">我的世界</a></div>
 		</div>
