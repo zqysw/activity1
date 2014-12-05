@@ -14,6 +14,7 @@
 </head>
 <body>
 	<div class="container">
+<<<<<<< HEAD
 
 		<form class="form-horizontal" role="form">
 	  		<div class="form-group">		
@@ -248,5 +249,9 @@
 			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm" role = "button">我的世界</a></div>
 		</div>
 	</div>
+=======
+		<div class = "row" id = "top">
+				<div class = "col-xs-12" id = "top_font">活动发布</div>
+>>>>>>> c8762c00de659b01e34ae5ff07b5019fb76dbad1
 </body>
 </html>
