@@ -49,14 +49,14 @@
 		</div>
 		<div class = "row" style = "margin-top:30px;">
 			<div class = "col-xs-12">
-				<button style = " margin-left:180px;margin-top:10px;" class = "btn btn-primary">确定</button>
+				<a href = "http://localhost/activity/index.php?/index/search_activity/search_list"><button style = " margin-left:180px;margin-top:10px;" class = "btn btn-primary">确定</button></a>
 			</div>
 		</div>
 		<div class = "row bottom">
 			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/index" class = "btn btn-primary btn-sm " role = "button">活动推荐</a></div>
 			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/create_activity/index" class = "btn btn-primary btn-sm " role = "button">活动发布</a></div>
 			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/search_activity/index" class = "btn btn-primary btn-sm disabled" role = "button">活动搜索</a></div>
-			<div class = "col-xs-3"><a href = "#" class = "btn btn-primary btn-sm" role = "button">我的世界</a></div>
+			<div class = "col-xs-3"><a href = "http://localhost/activity/index.php?/index/person/index" class = "btn btn-primary btn-sm" role = "button">我的世界</a></div>
 		</div>
 	</div>
 </body>

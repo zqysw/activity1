@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Search_activity extends CI_Controller {
+class search_activity extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,6 +24,10 @@ class Search_activity extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('search_activity');
+	}
+
+	public function search_list(){
+		$this->load->view('search_list');
 	}
 }
  

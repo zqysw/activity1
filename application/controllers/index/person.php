@@ -1,6 +1,6 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+ <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Create_activity extends CI_Controller {
+class Person extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,7 +23,9 @@ class Create_activity extends CI_Controller {
  		}
 	public function index()
 	{
-		$this->load->view('create_activity');
+		$this->load->view('person');
 	}
-
+	public function join_list(){
+		$this->load->view('join_list');
+	}
 }

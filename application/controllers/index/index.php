@@ -26,6 +26,10 @@ class 	Index extends CI_Controller {
 	{
 		$this->load->view('show_activity');
 	}
+	//这是转到具体介绍页面 
+	public function ac_introduction(){
+		$this->load->view('ac_introduction');
+	}
 }
 
 /* End of file welcome.php */

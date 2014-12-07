@@ -1,0 +1,32 @@
+#top{
+	height: 50px;
+	border: solid 1px grey;
+	background: #98FB98;
+}
+#top_font{
+	padding-left: 45px;
+	font-size: 16px;
+	font-style:bold;
+	margin-top: 9px;
+
+}
+#return_left{
+	padding-top: 15px;
+	text-align: center;
+} 
+.intro_font{
+	border: 1px solid grey;
+	background-color: #71C671;
+} 
+.phone{
+	margin-top:10px;
+}
+.ac_time{
+	margin-top:20px;
+}
+.ac_position{
+	margin-top:20px;
+}
+.ac_position img{
+	width:20px;
+}

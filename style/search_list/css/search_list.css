@@ -1,0 +1,25 @@
+#top{
+	height: 50px;
+	border: solid 1px grey;
+	background: #98FB98;
+}
+#top_font{
+	
+	font-size: 16px;
+	font-style:bold;
+	margin-top: 9px;
+} 
+#return_left{
+	padding-top: 15px;
+	text-align: center;
+}
+.content_border{
+	border: 1px solid grey;
+	height:80px;
+	margin-top: 10px;
+}
+.hide_content{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display: none;
+}
