@@ -5,7 +5,7 @@
 	<meta charset = "utf-8"> 
 	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 	<meta name = "viewport" content = "width=device-width,initial-scale = 1">
-	<title>活动推荐</title>
+	<title>我的世界</title>
 	<link href = "/activity/style/bootstrap/css/bootstrap-theme.min.css" rel = "stylesheet">
 	<link href = "/activity/style/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
 	<link href = "/activity/style/person/css/person.css" type = "text/css" rel = "stylesheet"></link>
@@ -29,18 +29,18 @@
 			<div class = "col-xs-3"><span class = "glyphicon glyphicon-edit"></span></div>
 		</div>
 		<div class = "protype">
-				<div class = "col-xs-8 pro_font">已参与</div>
+				<div class = "col-xs-8 pro_font had_join">已参与</div>
 				<div class = "col-xs-4 down_cla"><span class = "glyphicon glyphicon-chevron-right"></span></div>
 		</div>
-		<div class = "protype1">
-				<div class = "col-xs-8 pro_font">已发布</div>
-				<div class = "col-xs-4 down_cla"><span class = "glyphicon glyphicon-chevron-right"></span></div>
+		<div class = "protype1 had_create">
+				<div class = "col-xs-8 pro_font ">已发布</div>
+				<div class = "col-xs-4 down_cla "><span class = "glyphicon glyphicon-chevron-right"></span></div>
 		</div>
 		<div class = "protype1">
 				<div class = "col-xs-8 pro_font">积分商城</div>
 				<div class = "col-xs-4 down_cla"><span class = "glyphicon glyphicon-chevron-right"></span></div>
 		</div>
-		<div class = "protype1">
+		<div class = "protype1 message">
 				<div class = "col-xs-8 pro_font">消息</div>
 				<div class = "col-xs-4 down_cla"><span class = "glyphicon glyphicon-chevron-right"></span></div>
 		</div>

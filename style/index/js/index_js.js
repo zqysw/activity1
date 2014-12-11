@@ -6,6 +6,8 @@ $(document).ready(function(){
 	var hide_content  = $('.hide_content');
 	var class_border = $('.class_border');
 	var protype = $('.protype');
+	var ac_intro = $('.ac_introduction');
+	var login_btn = $('#login_btn');
 	//console.log(typeof content_border);
 	//console.log(content_border.eq(0));
 
@@ -36,52 +38,14 @@ $(document).ready(function(){
 	});
 /*$("div[href^= "#"])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	//*点击第一个活动,动态显示“具体介绍”，“我要报名”，“到这里去”这3个按钮
-	function show_button2(){
-		second.css("height","120px");
-		second.children().show();	
-	}
-	
-	//动态隐藏“具体介绍”，“我要报名”，“到这里去”这3个按钮
-	function hide_button2(){
-		second.css("height","80px");
-		hide_content.hide();
-		
-	}
-	//鼠标点击，显示按钮事件
-	second.click(function(){
-		show_button2();
-	});
-
-	//鼠标移出，隐藏按钮事件
-	forth.mouseout(function(){
-		hide_button2();
-	});
  //*结束*/
 
-
+ 	ac_intro.children().click(function(){
+ 		location.href = "http://localhost/activity/index.php?/index/index/ac_introduction";
+ 	});
+ 	login_btn.click(function(){
+ 		location.href = "http://localhost/activity/index.php?/land/index";
+ 	})
  
 
 

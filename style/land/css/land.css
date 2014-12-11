@@ -1,0 +1,11 @@
+.pic{
+	margin-left: 20px;
+	margin-top: 100px;
+}
+
+.pic img{
+	width: 200px;
+} 
+#autoload{
+	padding-left: 10px;
+}

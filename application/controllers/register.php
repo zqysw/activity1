@@ -1,6 +1,6 @@
- <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Person extends CI_Controller {
+class 	Register extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,21 +21,9 @@ class Person extends CI_Controller {
  		{
   			parent::__construct();
  		}
-
+ 		
 	public function index()
 	{
-		$this->load->view('person');
-	}
-
-	public function join_list(){
-		$this->load->view('join_list');
-	}
-	
-	public function create_list(){
-		$this->load->view('create_list');
-	}
-
-	public function message(){
-		$this->load->view('message');
+		$this->load->view('register');
 	}
 }

@@ -4,7 +4,7 @@
 	<meta charset = "utf-8"> 
 	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 	<meta name = "viewport" content = "width=device-width,initial-scale = 1">
-	<title>活动发布</title>
+	<title>活动列表</title>
 	<link href = "/activity/style/bootstrap/css/bootstrap-theme.min.css" rel = "stylesheet">
 	<link href = "/activity/style/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
 	<link href = "/activity/style/search_list/css/search_list.css" type = "text/css" rel = "stylesheet"></link>

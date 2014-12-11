@@ -1,0 +1,36 @@
+#top{
+	height: 50px;
+	border: solid 1px grey;
+	background: #98FB98;
+}
+#top_font{
+	padding-left: 45px;
+	font-size: 16px;
+	font-style:bold;
+	margin-top: 9px;
+} 
+.protype{
+	border: 1px solid grey;
+	height:40px;
+	margin-top: 15px;
+} 
+.pro_font{
+	font-size:14px;
+	margin-top: 0px;
+	height:30px;
+	padding-top:10px;
+}
+.down_cla{
+	padding-left: 55px;
+	padding-top: 5px;
+}
+#return_left{
+	padding-top: 12px;
+}
+.content_font{
+	border: 1px solid grey;
+}
+.button_ty{
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
