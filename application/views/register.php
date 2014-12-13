@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class = "container">
-		<form class="form-horizontal" role="form">
+		<form class="form-horizontal" role="form" action = "<?=base_url()?>index.php/sign/register_in" method = "post">
 			<div class = "form-group">
 				<div class = "col-xs-12 reg_font">注册</div>
 			</div>
@@ -25,13 +25,13 @@
 		    	</div>
 		    </div>
 		    <div class="form-group">
-		    	<label class="col-xs-3 control-label">密码</label>
+		    	<label id = "password1" class="col-xs-3 control-label">密码</label>
 		    	<div class="col-xs-7" style = "margin-left:22px;">  
 		     		 <input type="password" class="form-control">
 		    	</div>
 	  		</div>
 		    <div class="form-group">
-		    	<label class="col-xs-4 control-label">确认密码</label>
+		    	<label id = "password2" class="col-xs-4 control-label">确认密码</label>
 		    	<div class="col-xs-7">
 		     		 <input type="password" class="form-control">
 		    	</div>
