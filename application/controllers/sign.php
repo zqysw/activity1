@@ -20,55 +20,71 @@ class 	Sign extends CI_Controller {
 	 function __construct()
  		{
   			parent::__construct();
+  			$this->load->helper(array('form','url'));
+ 			$this->load->library('form_validation');
+ 			//载入model/signmodel
+ 			$this->load->model('signmodel');
  		}
+ 		//index() 初始加载注册页面
+ 		public function index()
+		{
+		$data = array(
+ 			'note' => '',
+ 		);
+		$this->load->view('register',$data);
+		}
+
 
  		public function register_in(){
- 			$this->load->helper(array('form','url'));
- 			$this->load->library('form_validation');
- 			$this->load->library('parser');
+ 			
  			//设置规则
  			if($this->form_validation->run() == FALSE)
  			{
 
  				$data = array(
- 					'string' => "填写内容不符合规范"
+ 					'note' => '填写内容不符合规范'
  				);
- 				//$this->load->view('register',$data);
- 				$this->load->vars($data);
- 				//$this->parser->parse('register', $data);
  				$this->load->view('register',$data);
-
- 				return  ;
+ 				
+ 				// $this->parser->parse('register', $data,TRUE);
+ 				//$this->load->view('register',$data);
+ 				return;
  			}
  			else{
  			//验证密码，与密码确认
  			if($this->input->post('password') != $this->input->post('passconf')){
- 				 echo  "两次输入的密码不一致";
- 				return ;
+ 				$data = array(
+ 					'note' => '两次输入的密码不一致'
+ 				);
+ 				$this->load->view('register',$data);
+ 				 return;
  			}
+
  			//从register.view取得值
  			$data = array();
  			$data['username'] = $this->input->post('username');
  			$data['password'] = $this->input->post('password');
  			$data['phone'] = $this->input->post('phone');
-
- 			//载入model/signmodel
- 			$this->load->model('signmodel');
  			 //检测用户是否存在
  			if($this->signmodel->checkUsername($data['username'])){
- 				echo "此用户已存在,请换用户名";
- 				$this->load->view('register');
- 				return ;
+ 				$data = array(
+ 					'note' => '用户名已被注册'
+ 				);
+ 				$this->load->view('register',$data);
+ 				 return;
+ 			}
+ 			
  			}
  			if(!$this->signmodel->adduser($data)){
- 				 echo  "注册失败";
- 				$this->load->view('register');
- 				return ;
+ 				$data = array(
+ 					'note' => '注册失败'
+ 				);
+ 				$this->load->view('register',$data);
+ 				 return;
  			}
  			else{
- 			 echo "恭喜你，注册成功";
- 				return ;
+ 			 $this->load->view('register_success');
  			}
  		}
 	}
- 	}
+ 	

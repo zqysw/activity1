@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+	header("Content-type: text/html; charset=utf-8"); 
 class 	Land extends CI_Controller {
 
 	/**
@@ -20,10 +20,52 @@ class 	Land extends CI_Controller {
 	 function __construct()
  		{
   			parent::__construct();
+		$this->load->helper(array('form','url'));
+		$this->load->library('form_validation');
+		$this->load->model('landmodel');
  		}
  		
 	public function index()
 	{
-		$this->load->view('land');
+		$data = array(
+ 			'note' => '',
+ 		);
+		$this->load->view('land',$data);
+
 	}
+	public function land_in()
+	{
+	//规则判断
+		if($this->form_validation->run() == FALSE)
+		{
+			$data = array(
+				'note' => '填写内容不符合规范'
+				);
+			$this->load->view('land',$data);
+			return;
+		}
+		else
+		{
+			$data = array();
+			$data['username'] = $this->input->post('username');
+			$data['password'] = $this->input->post('password');
+			if(!$this->landmodel->Check($data['username'],$data['password']))
+			{
+				$data = array(
+					'note' => '用户名或密码有误'
+					);
+				$this->load->view('land',$data);
+				return;
+			}
+			else
+			{
+				$data = array(
+					'username' => $data['username']
+					);
+				$this->load->view('land_success',$data);
+			}
+		}
+	}
+
 }
+?>

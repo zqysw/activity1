@@ -13,13 +13,7 @@
 	<script	src = "/activity/style/register/js/register.js"></script>
 
 	<!--<script type="text/javascript">
-            $(document).ready(function (){
-            	public function  notice($note){
-              
-               alert("<?php  echo $note;?>");
-           }
-           notice($note);
-            })
+           
         </script>-->
 </head>
 <body>
@@ -28,9 +22,10 @@
 			<div class = "form-group">
 				<div class = "col-xs-12 reg_font">注册</div>
 			</div>
+		<div><?=$note?$note:''?></div>
 		 	<div class="form-group">
 		   		<label  class="col-xs-3 control-label">昵称</label>
-		    	<div class="col-xs-7" style = "margin-left:22px;"><?php echo $data['string'];?>
+		    	<div class="col-xs-7" style = "margin-left:22px;">
 		      		<input class="form-control" type = "text" name = "username" >
 		     
 		    	</div>
@@ -39,7 +34,6 @@
 		    	<label id = "password1"  class="col-xs-3 control-label">密码</label>
 		    	<div class="col-xs-7" style = "margin-left:22px;">  
 		     		 <input type="password" class="form-control" name = "password" >
-		
 		    	</div>
 	  		</div>
 		    <div class="form-group">

@@ -14,36 +14,38 @@
 </head>
 <body>
 	<div class = "container">
+    <div><?=$note?$note:''?></div>
 		<div class = "row pic">
 			<div class = "col-xs-6">
 				<img src="/activity/style/land/img/hands.jpg">
 			</div>
 		</div>
 
-		<form name = "input" action = ""  method = "post" class="form-horizontal formmain" role="form">
+		<form role="form" action = "/activity/index.php?/land/land_in"  method = "post" class="form-horizontal formmain" >
   	   <div class="form-group" id = "user">
           <label for="user_id" class="col-sm-4 control-label">昵称</label>
-          <input type="text" class="form-control" id="user_id" >
+          <input type="text" class="form-control" id="user_id"  name ="username">
        </div>
+
   	   <div class="form-group" id = "pwd">
          <label for="inputPassword3" class="col-sm-4 control-label">密码</label>
-         <input type="password" class="form-control" id="password">
+         <input type="password" class="form-control" id="password" name = "password">
        </div>
 
        <div class="form-group checkbox" style = "text-align:center;">
-       		<div class="col-xs-6"><input type = "checkbox">记住密码 </div>
-       		<div class="col-xs-6"> <input type = "checkbox">自动登录 </div>
+       		<div class="col-xs-6"><input type = "checkbox" name = "remname">记住密码 </div>
+       		<div class="col-xs-6"> <input type = "checkbox" name = "autoland">自动登录 </div>
        </div>
        <br>
-    </form>
       <div class="row checkbox" >
         <div class="col-xs-6" style="text-align:center;">
           <button type = "submit"  name = "submit" class = "btn btn-primary ">登录</button>
         </div>
         <div class = "col-xs-6">
-          <button id = "register" name = "register" class = "btn btn-primary ">注册</button>
+          <button  id = "register" name = "register" class = "btn btn-primary ">注册</button>
         </div>
       </div>
+    </form>
 	</div>
 </body>
 </html>
