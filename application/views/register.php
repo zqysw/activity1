@@ -22,7 +22,6 @@
 			<div class = "form-group">
 				<div class = "col-xs-12 reg_font">注册</div>
 			</div>
-		<div><?=$note?$note:''?></div>
 		 	<div class="form-group">
 		   		<label  class="col-xs-3 control-label">昵称</label>
 		    	<div class="col-xs-7" style = "margin-left:22px;">
@@ -46,9 +45,9 @@
 		    	<label class="col-xs-4 control-label">联系方式</label>
 		    	<div class="col-xs-7">
 		     		 <input name = "phone" class="form-control" placeholder = "必填">
-		
 		    	</div>
 	  	    </div>
+	  	    <div style = "color:red;"><?=$note?$note:''?></div>
 	  	    <div class="form-group">
 		    	<div class = "col-xs-12">
 		    		<button type = "submit" style = " margin-left:180px;margin-top:10px;" class = "btn btn-primary">确定</button>

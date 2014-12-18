@@ -34,7 +34,7 @@
 			<div class = "content_border ">
 				<div class = "col-xs-12 content_font" >书法大赛：12月25号在杭州电子科技大学
 							学生活动中心开展书法大赛，参赛人员。。。</div>
-				<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
+				<div class = "col-xs-4 hide_content ac_introduction"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
 				<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">我要报名</button></div>
 				<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">到这里去</button></div>
 			</div>
@@ -42,7 +42,7 @@
 			<div class = "content_border ">
 				<div class = "col-xs-12 content_font" >篮球比赛：12月6号在杭州电子科技大学
 							体育馆举办篮球比赛，参赛人员。。。</div>
-				<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
+				<div class = "col-xs-4 hide_content ac_introduction"><button type = "button" class = "btn btn-primary btn-sm">具体介绍</button></div>
 				<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">我要报名</button></div>
 				<div class = "col-xs-4 hide_content"><button type = "button" class = "btn btn-primary btn-sm">到这里去</button></div>
 			</div>
