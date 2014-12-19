@@ -23,6 +23,7 @@ class 	Land extends CI_Controller {
 		$this->load->helper(array('form','url'));
 		$this->load->library('form_validation');
 		$this->load->model('landmodel');
+		$this->load->library('session');
  		}
  		
 	public function index()
@@ -49,7 +50,8 @@ class 	Land extends CI_Controller {
 			$data = array();
 			$data['username'] = $this->input->post('username');
 			$data['password'] = $this->input->post('password');
-			if(!$this->landmodel->Check($data['username'],$data['password']))
+			$data['remname'] = $this->input->post('remname');
+			if(!$this->landmodel->Check($data['username'],$data['password'],$data['remname']))
 			{
 				$data = array(
 					'note' => '用户名或密码有误'
