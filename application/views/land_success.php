@@ -19,7 +19,8 @@
 			<div class = "col-xs-12" >
 				<div class = "col-xs-8" id = "top_font">活动推荐</div>
 				<div class = "col-xs-4 username">
-					<?=$username?>
+					
+					
 				</div>
 			</div>
 		</div>

@@ -19,7 +19,12 @@
 			<div class = "col-xs-12" >
 				<div class = "col-xs-8" id = "top_font">活动推荐</div>
 				<div class = "col-xs-4">
-					<button type = "button" class = "btn btn-primary" id = "login_btn">登录</button>
+					<?php
+					 if($userdata['islogin'] == TRUE)
+						{<a href = "/activity/index.php/land/logout"> echo $username </a>}
+						else{<button type = "button" class = "btn btn-primary" id = "login_btn">登录</button>}
+					?>
+					
 				</div>
 			</div>
 		</div>

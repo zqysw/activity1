@@ -68,6 +68,13 @@ class 	Land extends CI_Controller {
 			}
 		}
 	}
+	//注销
+	public function logout(){
+		if(isset($_SESSION['username'])){
+			unset($_SESSION['username']);
+		}
+		$this->load->view('show_activity');
+	} 
 
 }
 ?>

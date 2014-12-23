@@ -11,28 +11,30 @@ class Landmodel extends  CI_Model{
     }
 
     //检查用户名和密码是否正确
-	function Check($username,$password,$remname,$table = 'user'){
+	function Check($username,$password,$autoland,$table = 'user'){
 		$query = $this->db->get_where($table,array('username' => $username,'password' => $password));
 		//$check = "$username = 'username' AND $password = 'password'";
 		//$query = $this->db->where($check);
 
 		if($query->num_rows>0){
 
-			if($remname==0){
+			if($autoland==0){
 
 			//设置session
-			$userdata1 = array(
-				'username' =>$username
+			$userdata = array(
+				'username' =>$username,
+				'islogin' => FALSE
 				);
-				$this->session->set_userdata($userdata1);
+				$this->session->set_userdata($userdata);
 				return true;
 			    }
-			else{
-			$userdata2 = array(
+			else {
+			$userdata = array(
 				'username' => $username,
-				'password' => $password
+				'password' => $password,
+				'islogin' =>TRUE
 				);
-				$this->session->set_userdata($userdata2);
+				$this->session->set_userdata($userdata);
 				return true;
 			 }
 		}

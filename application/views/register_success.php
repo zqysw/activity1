@@ -6,7 +6,7 @@
 
 <h3>注册成功</h3>
 
-<p><?php echo anchor('form', 'Try it again!'); ?></p>
+<a href="/activity/index.php?/land/index">现在登录</a>
 
 </body>
 </html>

@@ -20,11 +20,26 @@ class 	Index extends CI_Controller {
 	 function __construct()
  		{
   			parent::__construct();
+  			$this->load->library('session');
  		}
  		
 	public function index()
 	{
-		$this->load->view('show_activity');
+
+		//判断是否已登录
+		if($this->session->userdata('islogin')){
+    			//if true
+			$data = array(
+				'username' => $this->session->userdata['username']
+			);
+			$this->load->view('land_success',$data);
+    		}
+    	else{
+    		//if 没有登录
+    		$this->load->view('show_activity');
+    	}
+		
+
 	}
 	//这是转到具体介绍页面 
 	public function ac_introduction(){

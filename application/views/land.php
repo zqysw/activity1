@@ -33,8 +33,8 @@
        </div>
        <div style = "color:red;"><?=$note?$note:''?></div>
        <div class="form-group checkbox" style = "text-align:center;">
-       		<div class="col-xs-6"><input type = "checkbox" name = "remname" value = "1" <?php echo set_checkbox('mycheck[]','1'); ?> />记住密码 </div>
-       		<div class="col-xs-6"> <input type = "checkbox" name = "autoland" value = "2" <?php echo set_checkbox('mycheck[]','2'); ?> />自动登录 </div>
+       		<div class="col-xs-6"><input type = "checkbox" name = "autoland" value = "1"/>自动登录</div>
+       		<div class="col-xs-6"><a href="#">忘记密码？</a></div>
        </div>
        <br>
     </form>

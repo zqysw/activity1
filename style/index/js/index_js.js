@@ -8,6 +8,7 @@ $(document).ready(function(){
 	var protype = $('.protype');
 	var ac_intro = $('.ac_introduction');
 	var login_btn = $('#login_btn');
+	var username = $('.username');
 	//console.log(typeof content_border);
 	//console.log(content_border.eq(0));
 
@@ -45,11 +46,17 @@ $(document).ready(function(){
  	});
  	login_btn.click(function(){
  		location.href = "http://localhost/activity/index.php?/land/index";
- 	})
+ 	});
  
+    username.click(function(){
+    	if(confirm("确定注销吗？")){
+    		return true;
 
-
- 
+    	}
+    	else{
+    		return false;
+    	}
+    });
 
 
 
